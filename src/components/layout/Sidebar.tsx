@@ -113,14 +113,6 @@ const Sidebar = () => {
         {menuItems.map(item => renderMenuItem(item))}
       </div>
       <div className="p-4 border-t border-gray-800">
-        <div className="flex items-center">
-          <div className="w-8 h-8 rounded-full bg-gray-600 mr-3"></div>
-          <div>
-            <div className="text-sm font-medium">Admin User</div>
-            <div className="text-xs text-gray-400">admin@stabletech.com</div>
-          </div>
-        </div>
-
         <div className="mt-6">
           <p className="text-xs text-gray-500 mb-4 text-center">powered by</p>
           <div className="flex justify-center -ml-4">

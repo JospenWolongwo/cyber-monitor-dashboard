@@ -105,8 +105,8 @@ const TikTokStreamCard = () => {
         <div className="relative">
           <input
             type="text"
-            className="w-full px-4 py-2 bg-gray-50 rounded-lg text-sm"
-            placeholder="Rechercher un flux..."
+            placeholder="Rechercher un stream..."
+            className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[#2CB8C6] focus:ring-1 focus:ring-[#2CB8C6]"
           />
           <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
             🔍

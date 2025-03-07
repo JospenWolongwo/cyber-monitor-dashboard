@@ -31,7 +31,7 @@ const DetectionAnalysisCard = () => {
   };
 
   return (
-    <div className="border border-[#2CB8C6] rounded-xl bg-white h-full">
+    <div className="bg-white rounded-xl shadow-md border border-[#2CB8C6] h-full">
       <div className="flex items-center justify-between p-4">
         <div className="flex items-center gap-3">
           <div className="text-[#2CB8C6]">

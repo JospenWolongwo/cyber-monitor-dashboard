@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -32,19 +34,21 @@ const SocialMediaOverview = () => {
   return (
     <div className="border border-[#2CB8C6] rounded-xl bg-white p-4 h-full flex flex-col">
       {/* Platform Statistics */}
-      <div className="grid grid-cols-4 gap-4 mb-4">
+      <div className="grid grid-cols-4 gap-6 mb-6">
         {platforms.map((platform, index) => (
-          <div key={index} className="text-center">
+          <div key={index} className="text-center p-4 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
             <div className="flex flex-col items-center">
-              <Image
-                src={platform.icon}
-                alt={platform.name}
-                width={20}
-                height={20}
-                className="mb-1"
-              />
-              <div className="text-sm font-medium">{platform.followers}</div>
-              <div className="text-xs text-green-500">{platform.value}</div>
+              <div className="mb-3">
+                <Image
+                  src={platform.icon}
+                  alt={platform.name}
+                  width={40}
+                  height={40}
+                  className="h-10 w-10"
+                />
+              </div>
+              <div className="text-lg font-semibold text-gray-900">{platform.followers}</div>
+              <div className="text-sm font-medium text-green-600 mt-1">{platform.value}</div>
             </div>
           </div>
         ))}
@@ -57,10 +61,10 @@ const SocialMediaOverview = () => {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`
-              pb-2 text-sm transition-colors
+              pb-2 text-sm font-medium transition-colors
               ${activeTab === tab.id
-                ? 'border-b-2 border-[#2CB8C6] text-[#2CB8C6] font-medium'
-                : 'text-gray-500 hover:text-gray-700'
+                ? 'border-b-2 border-[#2CB8C6] text-[#2CB8C6]'
+                : 'text-gray-600 hover:text-gray-900'
               }
             `}
           >
@@ -70,7 +74,7 @@ const SocialMediaOverview = () => {
       </div>
 
       {/* Graph */}
-      <div className="mt-4 flex-1">
+      <div className="mt-6 flex-1">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#EEF2F6" />
@@ -78,12 +82,12 @@ const SocialMediaOverview = () => {
               dataKey="name"
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 11, fill: '#64748B' }}
+              tick={{ fontSize: 12, fill: '#64748B' }}
             />
             <YAxis
               axisLine={false}
               tickLine={false}
-              tick={{ fontSize: 11, fill: '#64748B' }}
+              tick={{ fontSize: 12, fill: '#64748B' }}
             />
             <Tooltip
               contentStyle={{
@@ -91,6 +95,7 @@ const SocialMediaOverview = () => {
                 border: '1px solid #E2E8F0',
                 borderRadius: '6px',
                 fontSize: '12px',
+                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
               }}
             />
             <Line

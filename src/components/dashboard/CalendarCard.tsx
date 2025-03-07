@@ -40,8 +40,8 @@ const CalendarCard = () => {
         <div className="relative mb-4">
           <input
             type="text"
-            className="w-full bg-gray-50 rounded-lg px-4 py-2 pr-10 text-sm"
-            placeholder="Search..."
+            placeholder="Rechercher un événement..."
+            className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[#2CB8C6] focus:ring-1 focus:ring-[#2CB8C6]"
           />
           <div className="absolute right-3 top-1/2 -translate-y-1/2">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="text-gray-400">

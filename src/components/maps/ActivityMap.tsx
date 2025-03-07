@@ -4,7 +4,8 @@ import { BarList } from '@tremor/react';
 interface RegionData {
   name: string;
   value: number;
-  icon?: React.ReactNode;
+  key?: string;
+  href?: string;
 }
 
 const data: RegionData[] = [
