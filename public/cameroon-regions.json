@@ -1,0 +1,23 @@
+{
+  "type": "Topology",
+  "arcs": [],
+  "transform": {
+    "scale": [1, 1],
+    "translate": [0, 0]
+  },
+  "objects": {
+    "cameroon": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": { "name": "Cameroon" },
+          "arcs": [[0]]
+        }
+      ]
+    }
+  },
+  "coordinates": [
+    [[9.3, 2.3], [14.5, 2.3], [14.5, 13.1], [9.3, 13.1], [9.3, 2.3]]
+  ]
+}

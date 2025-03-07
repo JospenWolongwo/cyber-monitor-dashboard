@@ -1,0 +1,23 @@
+{
+  "type": "Topology",
+  "arcs": [],
+  "transform": {
+    "scale": [1, 1],
+    "translate": [0, 0]
+  },
+  "objects": {
+    "countries": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": { "name": "World" },
+          "arcs": [[0]]
+        }
+      ]
+    }
+  },
+  "coordinates": [
+    [[-180, 90], [180, 90], [180, -90], [-180, -90], [-180, 90]]
+  ]
+}
