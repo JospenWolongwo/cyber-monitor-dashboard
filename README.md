@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cameroon Social Media Dashboard
+
+A comprehensive social media monitoring platform built with Next.js that provides real-time insights into social media activity across Cameroon. This dashboard offers various visualization tools and analytics features to track and analyze social media trends, user engagement, and geographic distribution of social media activity.
+
+## Features
+
+- **Real-time Analytics Dashboard**
+  - Social media activity overview
+  - Active users monitoring
+  - Recent activity tracking
+
+- **Geographic Visualization**
+  - World map view
+  - Cameroon-specific regional map
+  - Geographic activity distribution
+
+- **Social Media Integration**
+  - TikTok stream monitoring
+  - Detection analysis
+  - Alert system
+
+- **Management Tools**
+  - Contact list management
+  - Calendar integration
+  - Activity logging
+
+## Tech Stack
+
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **Maps**: D3.js for geographic visualizations
+- **State Management**: React Hooks
+- **UI Components**: Custom-built components
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/cyber-monitor-dashboard.git
+cd cyber-monitor-dashboard
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the dashboard.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+cyber-monitor-dashboard/
+├── public/               # Static files
+├── src/
+│   ├── app/             # App router pages
+│   ├── components/      # React components
+│   │   ├── dashboard/   # Dashboard-specific components
+│   │   ├── layout/      # Layout components
+│   │   ├── maps/        # Map visualization components
+│   │   └── social/      # Social media components
+│   └── styles/          # Global styles
+└── package.json         # Project dependencies
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The project is configured for easy deployment on Vercel. Simply connect your GitHub repository to Vercel for automatic deployments.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ❤️ for Cameroon's cybersecurity monitoring needs.
